@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CrearCuenta",
+            "request": "launch",
+            "mainClass": "CrearCuenta",
+            "projectName": "Backend with OracleNextOne5_bbaf6b56"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
@@ -43,6 +50,20 @@
             "name": "ForCicle",
             "request": "launch",
             "mainClass": "ForCicle",
+            "projectName": "Backend with OracleNextOne5_baa6210d"
+        },
+        {
+            "type": "java",
+            "name": "CrearCuenta",
+            "request": "launch",
+            "mainClass": "CrearCuenta",
+            "projectName": "Backend with OracleNextOne5_baa6210d"
+        },
+        {
+            "type": "java",
+            "name": "Cuenta",
+            "request": "launch",
+            "mainClass": "Cuenta",
             "projectName": "Backend with OracleNextOne5_baa6210d"
         },
     ]
