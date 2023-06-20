@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PruebaMetodos",
+            "request": "launch",
+            "mainClass": "PruebaMetodos",
+            "projectName": "Backend with OracleNextOne5_bbaf6b56"
+        },
+        {
+            "type": "java",
             "name": "CrearCuenta",
             "request": "launch",
             "mainClass": "CrearCuenta",
@@ -66,5 +73,12 @@
             "mainClass": "Cuenta",
             "projectName": "Backend with OracleNextOne5_baa6210d"
         },
+        {
+            "type": "java",
+            "name": "PruebaMetodos",
+            "request": "launch",
+            "mainClass": "PruebaMetodos",
+            "projectName": "Backend with OracleNextOne5_baa6210d"
+        }
     ]
 }
