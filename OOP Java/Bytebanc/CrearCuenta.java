@@ -7,5 +7,12 @@ public class CrearCuenta {
         Cuenta segundaCuenta = new Cuenta();
         segundaCuenta.saldo = 500;
         System.out.println(segundaCuenta.saldo);
+
+        Cuenta terceraCuenta = segundaCuenta;
+
+        System.out.println(primeraCuenta);
+        System.out.println(segundaCuenta);
+        System.out.println(terceraCuenta);
+
     }
 }
