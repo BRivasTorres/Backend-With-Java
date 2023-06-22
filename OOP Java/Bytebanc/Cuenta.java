@@ -1,7 +1,7 @@
 public class Cuenta {
     private double saldo;
-    int agencia;
-    int numero;
+    private int agencia;
+    private int numero;
     Cliente titular;
 
     public void depositar(double valor) {
@@ -27,5 +27,19 @@ public class Cuenta {
             System.out.println("Saldo insuficiente, no se puede transferir dicha cantidad");
             return false;
         }
+    }
+
+    public double getSaldo() {
+        return this.saldo;
+    }
+
+    public void setAgencia(int nuevaAgencia) {
+        if (nuevaAgencia > 0) {
+            this.agencia = nuevaAgencia;
+        }
+    }
+
+    public int getAgencia() {
+        return agencia;
     }
 }
