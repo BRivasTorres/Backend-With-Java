@@ -7,4 +7,5 @@ public class PruebaAcceso {
         System.out.println(cuenta.getSaldo());
         System.out.println(cuenta.getAgencia());
     }
+
 }
