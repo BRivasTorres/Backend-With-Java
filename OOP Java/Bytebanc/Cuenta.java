@@ -3,14 +3,17 @@ public class Cuenta {
     private int agencia;
     private int numero;
     Cliente titular;
+    private static int total = 0;
 
     public Cuenta(int agencia) {
+        int total = 0;
         if (agencia <= 0) {
             System.out.println("No se permite 0");
             this.agencia = 1;
         } else {
             this.agencia = agencia;
         }
+        total++;
     }
 
     public void depositar(double valor) {
