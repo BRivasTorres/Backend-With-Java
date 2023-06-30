@@ -4,6 +4,15 @@ public class Cuenta {
     private int numero;
     Cliente titular;
 
+    public Cuenta(int agencia) {
+        if (agencia <= 0) {
+            System.out.println("No se permite 0");
+            this.agencia = 1;
+        } else {
+            this.agencia = agencia;
+        }
+    }
+
     public void depositar(double valor) {
         this.saldo += valor;
     };
@@ -33,17 +42,15 @@ public class Cuenta {
         return this.saldo;
     }
 
-    public void setAgencia(int nuevaAgencia) {
-        if (nuevaAgencia > 0) {
-            this.agencia = nuevaAgencia;
-        }
-    }
-
     public int getAgencia() {
         return agencia;
     }
 
     public void setTitular(Cliente titular) {
         this.titular = titular;
+    }
+
+    public Cliente getTitular() {
+        return titular;
     }
 }
