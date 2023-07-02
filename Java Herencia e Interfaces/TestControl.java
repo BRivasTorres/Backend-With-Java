@@ -8,5 +8,8 @@ public class TestControl {
 
         ControlBonificaciones control = new ControlBonificaciones();
         control.registrarSalario(diego);
+
+        Contador alexis = new Contador();
+
     }
 }

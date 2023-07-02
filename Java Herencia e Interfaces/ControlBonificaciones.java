@@ -10,4 +10,9 @@ public class ControlBonificaciones {
         this.suma = gerente.getBonificacion() + this.suma;
         return this.suma;
     }
+
+    public double registrarSalario(Contador contador) {
+        this.suma = contador.getBonificacion() + this.suma;
+        return this.suma;
+    }
 }
