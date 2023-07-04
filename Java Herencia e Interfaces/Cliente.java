@@ -1,4 +1,4 @@
-public class Cliente extends Autenticable {
+public class Cliente implements Autenticable {
     private String nombre;
     private String documento;
     private String telefono;
@@ -31,5 +31,11 @@ public class Cliente extends Autenticable {
     public boolean iniciarSecion(String clave) {
         // TODO Auto-generated method stub
         return false;
+    }
+
+    @Override
+    public void setClave(String clave) {
+        // TODO Auto-generated method stub
+
     }
 }
