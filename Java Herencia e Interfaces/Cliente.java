@@ -2,6 +2,7 @@ public class Cliente implements Autenticable {
     private String nombre;
     private String documento;
     private String telefono;
+    private String clave;
 
     public String getNombre() {
         return nombre;
@@ -29,13 +30,11 @@ public class Cliente implements Autenticable {
 
     @Override
     public boolean iniciarSecion(String clave) {
-        // TODO Auto-generated method stub
-        return false;
+        return this.clave == clave;
     }
 
     @Override
     public void setClave(String clave) {
-        // TODO Auto-generated method stub
-
+        this.clave = clave;
     }
 }
