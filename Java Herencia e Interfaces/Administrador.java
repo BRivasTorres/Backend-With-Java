@@ -1,6 +1,9 @@
 public class Administrador extends Funcionario implements Autenticable {
+    private AutenticacionUtil util;
 
-    private String clave;
+    public Administrador() {
+        this.util = new AutenticacionUtil();
+    }
 
     @Override
     public double getBonificacion() {
@@ -9,11 +12,11 @@ public class Administrador extends Funcionario implements Autenticable {
 
     @Override
     public void setClave(String clave) {
-
+        this.util.setClave(clave);
     }
 
     @Override
     public boolean iniciarSecion(String clave) {
-        return this.clave == clave;
+        return this.util.iniciarSecion(clave);
     }
 }
