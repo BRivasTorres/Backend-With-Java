@@ -7,13 +7,18 @@ public class Flujo {
 
     public static void metodo1() {
         System.out.println("In do metodo1");
-        metodo2();
+
+        try {
+            metodo2();
+        } catch (MiExepción me) {
+            me.printStackTrace();
+        }
+
         System.out.println("Fin do metodo1");
     }
 
     public static void metodo2() {
         System.out.println("IN do metodo2");
-        throw new ArithmeticException();
+        throw new MiExepción("Mi exepcion fue lanzada");
     }
-
 }
