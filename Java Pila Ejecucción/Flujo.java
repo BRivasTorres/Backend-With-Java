@@ -1,11 +1,16 @@
 public class Flujo {
     public static void main(String[] args) {
         System.out.println("IN do main");
-        metodo1();
+        try {
+            metodo1();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         System.out.println("Fin do main");
     }
 
-    public static void metodo1() {
+    public static void metodo1() throws MiExepción {
         System.out.println("In do metodo1");
 
         try {
