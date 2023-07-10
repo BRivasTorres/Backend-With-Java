@@ -18,8 +18,8 @@ public class Flujo {
     }
 
     public static void metodo2() {
-        // System.out.println("IN do metodo2");
-        // throw new MiExepción("Mi exepcion fue lanzada");
-        metodo2();
+        System.out.println("IN do metodo2");
+        throw new MiExepción("Mi exepcion fue lanzada");
+        // metodo2();
     }
 }
