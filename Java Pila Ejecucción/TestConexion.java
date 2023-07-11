@@ -7,6 +7,8 @@ public class TestConexion {
         } catch (IllegalStateException ex) {
             System.out.println("reciviendo expection");
             ex.printStackTrace();
+        } finally {
+            System.out.println("Ejecutando finally");
             con.cerrar();
         }
     }
