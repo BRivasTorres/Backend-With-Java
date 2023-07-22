@@ -14,5 +14,10 @@ public class TestArrayList {
         for (Cuenta cuenta : lista) {
             System.out.println(cuenta);
         }
+
+        boolean contine = lista.contains(cc);
+        if (contine) {
+            System.out.println("si");
+        }
     }
 }
